@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import {NavLink, Outlet, useLocation} from 'react-router-dom'
-import axios from 'axios'
+
 import AccountCard from '../AccountFolder/AccountCard'
+import api from '../utils/api'
 
 const Accounts = () => {
 
@@ -10,7 +11,7 @@ const Accounts = () => {
   let location = useLocation();
 
   useEffect(()=>{
-    axios.get(`http://localhost:3000/Accounts`)
+    api.get(`/Accounts`)
     .then((res)=>{
       // console.log(res.data)
       setaccounts(res.data);

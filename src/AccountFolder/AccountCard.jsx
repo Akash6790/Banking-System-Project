@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import axios from 'axios'
+
 import { toast } from 'react-toastify';
+import api from '../utils/api';
 
 const AccountCard = ({ acc }) => {
   console.log(acc.accName)
@@ -21,11 +22,11 @@ const AccountCard = ({ acc }) => {
     let updateBalance = Number(acc.InitialBalance)+Number(formData.amount);
     
     //update balance in db
-    axios.patch(`http://localhost:3000/Accounts/${acc.id}`,{
+    api.patch(`/Accounts/${acc.id}`,{
       InitialBalance: updateBalance
     })
     //creating an deposite transaction 
-    axios.post(`http://localhost:3000/transaction`,{
+    api.post(`/transaction`,{
       accouuntId : acc.id,
       accountName :acc.accName,
       amount:formData.amount,
@@ -44,12 +45,12 @@ const AccountCard = ({ acc }) => {
     let updateBalance = Number(acc.InitialBalance)-Number(formData.amount);
     
     //update balance in db
-    axios.patch(`http://localhost:3000/Accounts/${acc.id}`,{
+    api.patch(`/Accounts/${acc.id}`,{
       InitialBalance: updateBalance
     })
     //creating an deposite transaction 
-    axios.post(`http://localhost:3000/transaction`,{
-      accouuntId : acc.id,
+    api.post(`/transaction`,{
+      accountId : acc.id,
       accountName :acc.accName,
       amount:formData.amount,
       description : formData.description,
@@ -61,10 +62,68 @@ const AccountCard = ({ acc }) => {
       window.location.reload();
     },2000)
   }
+  let handleTransfer =async(e)=>{
+      let senderBalance = Number(acc.InitialBalance)-Number(formData.amount);
+
+      await api.patch(`/Accounts/${acc.id}`,{
+        InitialBalance : senderBalance 
+      })
+
+      let receiverAccount = await api.get(`/Accounts/${formData.accountNo}`)
+
+      let receiverBalance = Number(receiverAccount.data.InitialBalance)+ Number(formData.amount)
+
+      await api.patch(`/Accounts/${formData.accountNo}`,{
+        InitialBalance : receiverBalance
+      })
+
+      await api.post(`/transaction`,{
+        fromAccountNo : acc.id ,
+        fromAccountName : acc.accName,
+
+        toAccountNo : formData.accountNo,
+        toAccountName : formData.receiverName,
+        amount : formData.amount,
+        type : "Transfer",
+        date : new Date().toLocaleString(),
+
+      })
+      toast.success("Transfer Sucessfully")
+
+      setTimeout(()=>{
+          window.location.reload()
+      },2000)
+
+     
+  }
+  let handleDelete = async ()=>{
+    // let  accDelete = window.confirm("Are you sure want to delete account")
+
+    let transactions = await api.get(`/transaction`)
+    console.log(transactions)
+
+    let relatedTransactions = transactions.data.filter((items)=>{
+      return items.accountId === acc.id || items.fromAccountNo ===acc.id
+    })
+    console.log(relatedTransactions)
+
+    for(let item of relatedTransactions){
+        await api.delete(`/transaction/${item.id}`)
+    }
+
+    await api.delete(`/Accounts/${acc.id}`)
+
+    toast.success('Account delete successfully ')
+
+    setTimeout(()=>{
+      window.location.reload();
+    },3000)
+  }
   return (
     <>
       <div className="account-card">
         <h2>Account Name : {acc.accName}</h2>
+        <h3>Account Number : {acc.id}</h3>
         <p>Account Type : {acc.accType}</p>
         <h3>Balance : $ {acc.InitialBalance}/-</h3>
         <div className="card-buttons">
@@ -73,16 +132,14 @@ const AccountCard = ({ acc }) => {
           <button onClick={() => { setType('transfer') }}>Transfer</button>
           <button onClick={() => { setType('delete') }}>Delete Account</button>
         </div>
-      </div>
-       
-      {
+        {
         type === 'transfer' && (
           <>
             <input type="number" name='amount' onChange={handlChange} placeholder='Enter amount' />
             <input type="text" name='description' onChange={handlChange} placeholder='Enter description' />
-            <input type="number" name='accountNo' onChange={handlChange} placeholder='Enter accountNo' />
+            <input type="text" name='accountNo' onChange={handlChange} placeholder='Enter accountNo' />
             <input type="text" name='receiverName' onChange={handlChange} placeholder='Enter receiverName' />
-            <button>Confirm Transfer</button>
+            <button onClick={handleTransfer}>Confirm Transfer</button>
           </>
         )
       }
@@ -100,6 +157,7 @@ const AccountCard = ({ acc }) => {
           <>
             <input type="number" name='amount' onChange={handlChange} placeholder='Enter amount' />
             <input type="text" name='description' onChange={handlChange} placeholder='Enter description' />
+            <br />
             <button onClick={handleWithdraw}>Confirm Withdraw</button>
           </>
         )
@@ -107,10 +165,13 @@ const AccountCard = ({ acc }) => {
       {
         type === 'delete' && (
           <>
-          <button>Confirm Delete</button>
+          <button onClick={handleDelete}>Confirm Delete</button>
           </>
         )
       }
+      </div>
+       
+      
     </>
   )
 }

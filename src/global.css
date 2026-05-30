@@ -615,3 +615,66 @@ button[type="button"]:hover {
 .account-card button:nth-child(5):hover { background-color: #e68900; }
 .account-card button:nth-child(6) { background-color: #dc3545; }
 .account-card button:nth-child(6):hover { background-color: #b02a37; }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.transactions-container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.transactions-container table{
+    width: 95%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.transactions-container thead{
+    background: linear-gradient(90deg, #4b6cb7, #182848);
+    color: white;
+}
+
+.transactions-container th{
+    padding: 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.transactions-container td{
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: 15px;
+    color: #333;
+}
+
+.transactions-container tbody tr{
+    transition: 0.3s;
+}
+
+.transactions-container tbody tr:hover{
+    background: #eef4ff;
+    transform: scale(1.01);
+}
+
+.transactions-container tbody tr:nth-child(even){
+    background: #fafafa;
+}
+
+.transactions-container tbody tr:last-child td{
+    border-bottom: none;
+}

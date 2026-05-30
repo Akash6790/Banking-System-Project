@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios';
 import {toast} from 'react-toastify'
 import { useNavigate } from 'react-router-dom';
+import api from '../utils/api';
 
 const CreateAccount = () => {
     let navigate = useNavigate();
@@ -16,7 +17,7 @@ const CreateAccount = () => {
     }
     let handleSubmit = (e) => {
         e.preventDefault();
-        axios.post(`http://localhost:3000/Accounts`, { ...formdata, InitialBalance: parseFloat(formdata.InitialBalance) })
+        api.post(`/Accounts`, { ...formdata, InitialBalance: parseFloat(formdata.InitialBalance) })
             .then((res) => {
                 console.log(res.data);
                 toast.success("Account Created sucessfully ")
@@ -31,6 +32,7 @@ const CreateAccount = () => {
             }).catch((err) => {
                 toast.error("Something went Wrong")
             })
+            window.location.reload()
     }
     return (
         <section className="create-account">

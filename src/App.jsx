@@ -11,6 +11,7 @@ import Register from './Auth/Register';
 import Deposit from './pages/Deposit';
 import Loans from './pages/Loans'
 import CreateAccount from './AccountFolder/CreateAccount';
+import PrivateRouter from './utils/PrivateRouter';
 
 const App = () => {
     let router = createBrowserRouter([
@@ -24,7 +25,11 @@ const App = () => {
                 },
                 {
                     path : '/accounts',
-                    element : <Accounts/>,
+                    element : (
+                        <PrivateRouter>
+                            <Accounts/>
+                        </PrivateRouter>
+                    ),
                     children :[{
                             path:'/accounts/CreateAccount',
                             element:<CreateAccount/>
@@ -34,7 +39,11 @@ const App = () => {
                 },
                 {
                     path :'/deposits',
-                    element :<Deposit/>
+                    element :(
+                        <PrivateRouter>
+                            <Deposit/>
+                        </PrivateRouter>
+                    )
                 },
                 {
                     path : '/register',
@@ -46,11 +55,17 @@ const App = () => {
                 },
                 {
                     path :'/transcation',
-                    element :<Transaction/>
+                    element :(
+                        <PrivateRouter>
+                            <Transaction/>
+                        </PrivateRouter>
+                    )
                 },
                 {
                     path : '/loans',
-                    element : <Loans/>
+                    element : <PrivateRouter>
+                        <Loans/>
+                    </PrivateRouter>
                 }
             ]
         }

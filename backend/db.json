@@ -1,44 +1,51 @@
 {
   "register": [
     {
-      "username": "akash",
+      "username": "akashuk679@gmail.com",
       "email": "akashuk679@gmail.com",
       "password": "123456",
       "phNum": "1234567890",
-      "id": "KDDQLffphW0"
+      "id": "bDe_wwsKTyY"
     },
     {
       "username": "akashuk679@gmail.com",
       "email": "akashuk679@gmail.com",
       "password": "123456",
       "phNum": "1234567890",
-      "id": "4YVQJGWY130"
+      "id": "T0CI7ggN4RE"
+    },
+    {
+      "username": "",
+      "email": "",
+      "password": "",
+      "phNum": "",
+      "id": "1b7e3ynhW4w"
     }
   ],
   "Accounts": [
     {
-      "accName": "suhas",
+      "accName": "vijay",
+      "accType": "Current",
+      "InitialBalance": 82000,
+      "id": "Tgb8D3UgvsI"
+    },
+    {
+      "accName": "vikas ",
       "accType": "Savings",
-      "InitialBalance": 20000,
-      "id": "uRXP6REB6aw"
+      "InitialBalance": 50000,
+      "id": "LfTXnfvvvqw"
+    },
+    {
+      "accName": "shivu",
+      "accType": "Savings",
+      "InitialBalance": 25000,
+      "id": "ONPC7YMmf_c"
     },
     {
       "accName": "suhas",
       "accType": "Savings",
-      "InitialBalance": 10000,
-      "id": "uRXP6REB6aw"
-    },
-    {
-      "accName": "suhas",
-      "accType": "Savings",
-      "InitialBalance": 10000,
-      "id": "uRXP6REB6aw"
-    },
-    {
-      "accName": "suhas",
-      "accType": "Savings",
-      "InitialBalance": 10000,
-      "id": "uRXP6REB6aw"
+      "InitialBalance": 12000,
+      "id": "q8ViVrKNops"
     }
   ],
   "transaction": [
@@ -59,6 +66,52 @@
       "type": "withdraw",
       "date": "28/5/2026, 12:10:17 pm",
       "id": "fy6PrSCqFsE"
+    },
+    {
+      "fromAccountNo": "uRXP6REB6aw",
+      "fromAccountName": "suhas",
+      "toAccountNo": "uRXP6REB6aw",
+      "toAccountName": "suhas",
+      "amount": "10000",
+      "type": "Transfer",
+      "date": "29/5/2026, 11:48:08 am",
+      "id": "PHGRzE3Tk5c"
+    },
+    {
+      "accouuntId": "xMy5OcZbuRE",
+      "accountName": "Akash",
+      "amount": "2000",
+      "description": "",
+      "type": "Deposit",
+      "date": "29/5/2026, 9:57:28 pm",
+      "id": "5QLlqOS-XYA"
+    },
+    {
+      "accouuntId": "Tgb8D3UgvsI",
+      "accountName": "vijay",
+      "amount": "30000",
+      "description": "",
+      "type": "Deposit",
+      "date": "29/5/2026, 9:57:39 pm",
+      "id": "DYZuOwa3aWY"
+    },
+    {
+      "accouuntId": "ONPC7YMmf_c",
+      "accountName": "shivu",
+      "amount": "30000",
+      "description": "",
+      "type": "Deposit",
+      "date": "29/5/2026, 9:57:56 pm",
+      "id": "dvV_ZtgshdA"
+    },
+    {
+      "accouuntId": "ONPC7YMmf_c",
+      "accountName": "shivu",
+      "amount": "5000",
+      "description": "",
+      "type": "withdraw",
+      "date": "29/5/2026, 9:58:16 pm",
+      "id": "9MeLHNmkGA8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

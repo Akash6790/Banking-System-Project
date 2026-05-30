@@ -25,6 +25,7 @@ const Login = () => {
       })
       if(user){
         toast.success("Login sucessfull")
+        localStorage.setItem('userData',JSON.stringify(user))
         setTimeout(()=>{
           navigate('/')
         }, 3000)
