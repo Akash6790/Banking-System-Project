@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import {NavLink, Outlet, useLocation} from 'react-router-dom'
-
 import AccountCard from '../AccountFolder/AccountCard'
 import api from '../utils/api'
+import '../pages/Accounts.css'
 
 const Accounts = () => {
 
@@ -18,28 +18,33 @@ const Accounts = () => {
     })
   }, [])
   return (
-    <div>
+    <div className="accounts-page">
       <section className="container">
         {
-          location.pathname != "/accounts/CreateAccount"&&(
+          location.pathname != "/accounts/CreateAccount" && (
             <>
-            <aside className="create-acc-btn">
-          <button> <NavLink to='/accounts/CreateAccount'>Create Account</NavLink></button> 
-         </aside>
-         <aside className="account-cards">
-          {
-            accounts.map((acc)=>{
-              // console.log(acc)
-              return(
-                <AccountCard  acc={acc}/>
-              )
-            })
-          }
-         </aside></>
+              <div className="accounts-hero">
+                <div className="accounts-hero-content">
+                  <div>
+                    <h1>My Accounts</h1>
+                    <p>Manage all your bank accounts in one place</p>
+                  </div>
+                  <aside className="create-acc-btn">
+                    <button><NavLink to='/accounts/CreateAccount'>+ Create Account</NavLink></button>
+                  </aside>
+                </div>
+              </div>
+              <aside className="account-cards">
+                {
+                  accounts.map((acc) => (
+                    <AccountCard key={acc.id} acc={acc} />
+                  ))
+                }
+              </aside>
+            </>
           )
         }
-         
-         <Outlet/>
+        <Outlet />
       </section>
     </div>
   )

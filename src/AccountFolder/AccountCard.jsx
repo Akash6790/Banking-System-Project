@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-
 import { toast } from 'react-toastify';
 import api from '../utils/api';
+import '../pages/Accounts.css'
 
 const AccountCard = ({ acc }) => {
   console.log(acc.accName)
@@ -127,10 +127,10 @@ const AccountCard = ({ acc }) => {
         <p>Account Type : {acc.accType}</p>
         <h3>Balance : $ {acc.InitialBalance}/-</h3>
         <div className="card-buttons">
-          <button onClick={() => { setType('deposit') }}>Deposit</button>
-          <button onClick={() => { setType('withdraw') }}>Withdraw</button>
-          <button onClick={() => { setType('transfer') }}>Transfer</button>
-          <button onClick={() => { setType('delete') }}>Delete Account</button>
+          <button onClick={() => { setType('deposit') }}>↓ Deposit</button>
+          <button onClick={() => { setType('withdraw') }}>↑ Withdraw</button>
+          <button onClick={() => { setType('transfer') }}>⇄ Transfer</button>
+          <button onClick={() => { setType('delete') }}>✕ Delete</button>
         </div>
         {
         type === 'transfer' && (

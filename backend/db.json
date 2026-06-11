@@ -20,6 +20,20 @@
       "password": "",
       "phNum": "",
       "id": "1b7e3ynhW4w"
+    },
+    {
+      "username": "akashuk679000@gmail.com",
+      "email": "akashuk679000@gmail.com",
+      "password": "1234",
+      "phNum": "1234567890",
+      "id": "EYsq98shiws"
+    },
+    {
+      "username": "akash",
+      "email": "akashuk679000@gmail.com",
+      "password": "123456",
+      "phNum": "1234567890",
+      "id": "gUZtwHMxmWk"
     }
   ],
   "Accounts": [
@@ -38,7 +52,7 @@
     {
       "accName": "shivu",
       "accType": "Savings",
-      "InitialBalance": 25000,
+      "InitialBalance": 21000,
       "id": "ONPC7YMmf_c"
     },
     {
@@ -112,6 +126,302 @@
       "type": "withdraw",
       "date": "29/5/2026, 9:58:16 pm",
       "id": "9MeLHNmkGA8"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:36 pm",
+      "id": "vrT716J3hUU"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:37 pm",
+      "id": "6h21Svw1Mv0"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:38 pm",
+      "id": "b0WHu1ibChg"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:38 pm",
+      "id": "-n6vzOxuhXo"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:38 pm",
+      "id": "GzRTUdqNPEc"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:39 pm",
+      "id": "hBpYnpNsAUM"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:39 pm",
+      "id": "dqmzyj1nGeQ"
+    },
+    {
+      "accountId": "LfTXnfvvvqw",
+      "accountName": "LfTXnfvvvqw",
+      "amount": 19732,
+      "description": "EMI Repayment - Loan #jcnsFxQUGNA",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:39 pm",
+      "id": "Xflih1roSrE"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:53 pm",
+      "id": "01HaftyJb40"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:57 pm",
+      "id": "1McvAJ2gchg"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:56:59 pm",
+      "id": "yq3lY4_loSU"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:00 pm",
+      "id": "UFiGmHqzlVo"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:01 pm",
+      "id": "hYT_kNSGCXw"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:02 pm",
+      "id": "nE8AGmYZ8gk"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:03 pm",
+      "id": "k96a2NEs42M"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:04 pm",
+      "id": "cglD35NP7kQ"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:04 pm",
+      "id": "3REyyjrVJkc"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:05 pm",
+      "id": "fumlS3GT75g"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:06 pm",
+      "id": "RUUZerUmSxU"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:06 pm",
+      "id": "BG2Po3DxF8g"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:07 pm",
+      "id": "kwxCAIVev5s"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:07 pm",
+      "id": "aV-2yqCR1dY"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:07 pm",
+      "id": "UN0I2tssOJg"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:07 pm",
+      "id": "XH_QzqV1Cus"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:07 pm",
+      "id": "GtfIwHBUSDc"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:08 pm",
+      "id": "tgjVK0P6Cl4"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "accountName": "Tgb8D3UgvsI",
+      "amount": 27025,
+      "description": "EMI Repayment - Loan #YlTp2G4yLOk",
+      "type": "Loan Repayment",
+      "date": "11/6/2026, 10:57:09 pm",
+      "id": "FRIJ3tPd2LU"
+    },
+    {
+      "accountId": "ONPC7YMmf_c",
+      "accountName": "shivu",
+      "amount": 4000,
+      "description": "",
+      "type": "Withdraw",
+      "date": "11/6/2026, 11:22:23 pm",
+      "id": "5pQg296SzbQ"
+    }
+  ],
+  "loans": [
+    {
+      "accountId": "LfTXnfvvvqw",
+      "loanType": "Personal",
+      "amount": 200000,
+      "tenure": 11,
+      "purpose": "bike",
+      "interestRate": 12,
+      "emi": 19732,
+      "remainingBalance": 0,
+      "paidEMIs": 11,
+      "status": "Closed",
+      "date": "11/6/2026",
+      "id": "jcnsFxQUGNA"
+    },
+    {
+      "accountId": "Tgb8D3UgvsI",
+      "loanType": "Education",
+      "amount": 500000,
+      "tenure": 20,
+      "purpose": "education",
+      "interestRate": 6,
+      "emi": 27025,
+      "remainingBalance": 0,
+      "paidEMIs": 19,
+      "status": "Closed",
+      "date": "11/6/2026",
+      "id": "YlTp2G4yLOk"
+    },
+    {
+      "accountId": "q8ViVrKNops",
+      "loanType": "Home",
+      "amount": 2000000,
+      "tenure": 60,
+      "purpose": "house",
+      "interestRate": 7.5,
+      "emi": 40076,
+      "remainingBalance": 2000000,
+      "paidEMIs": 0,
+      "status": "Rejected",
+      "date": "11/6/2026",
+      "id": "rQ5gZqI6dHQ"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
